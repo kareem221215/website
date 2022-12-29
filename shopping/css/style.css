@@ -1,0 +1,829 @@
+*{
+    box-sizing: border-box
+}
+
+body{
+
+    overflow-x: hidden;
+}
+
+.header {
+    text-align: center;
+    margin: auto;
+    width: 600px;
+    padding: 50px;
+    font-size: 1cm;
+    color: orange;
+}
+
+
+/* navigation bar*/
+
+header{
+    width: 100%;
+    height: 80px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    position: fixed;
+    top: 0;
+    z-index: 1030;
+    /*background-color: white;*/
+}
+
+
+.humburger{
+display: none;
+}
+.nav-bar ul{
+    display: flex;
+    list-style: none;
+    padding-left: 0;
+    
+}
+.nav-bar ul li a {
+    display: block;
+    color: orange;
+    font-size: 30px;
+    padding: 10px 5px;
+    border-radius: 50px;
+    transition: 0.2s;
+    margin: 10px 200px;
+}
+.home {
+  position: absolute;
+  left: -15%;
+  display: block;
+  color: orange;
+  font-size: 100px;
+  padding: 10px 5px;
+  border-radius: 50px;
+  transition: 0.2s;
+  margin: 10px 200px;
+}
+.cart {
+  position: absolute;
+  left: 70%;
+  display: block;
+  color: orange;
+  font-size: 20px;
+  padding: 10px 5px;
+  border-radius: 50px;
+  transition: 0.2s;
+  margin: 10px 200px;
+}
+
+.nav-bar ul li a:hover{
+    color: orange;
+    background: rgb(87, 47, 1);
+}
+
+
+
+/* title*/
+.title{
+    text-align: center;
+    padding-right: 43%;
+    color: orange;
+    
+}
+
+.title2{
+    text-align: right;
+    padding-right: 24%;
+    position: relative;
+    top: -50px;
+    color: orange;
+}
+
+/*main pics*/
+.container{
+    width: 100%;
+    padding: 20px;
+    margin: 200px auto;
+    display: flex;
+    flex-direction: row;
+    justify-content: left;
+}
+
+.box{
+    width: 250px;
+    height: 300px;
+    background: orange;
+    margin: -200px 270px;
+    transition: 1s;
+}
+.box2{
+    width: 250px;
+    height: 300px;
+    background: orange;
+    margin: -200px 270px;
+    transition: 1s;
+    float: right;
+}
+
+
+.box:hover{
+    transform: scale(1.3);
+    z-index: 2;
+    box-shadow: 2px 2px 2px #000;
+    
+}
+.box2:hover{
+    transform: scale(1.3);
+    z-index: 2;
+    box-shadow: 2px 2px 2px #000;
+    
+}
+/* text 2*/
+.services{
+    text-align: center;
+    font-size: 1cm;
+    color: orange;
+    position: relative;
+    top: 100px;
+    
+}
+.product{
+    text-align: center;
+    font-size: 1cm;
+    color: orange;
+    position: relative;
+    top: -50px;
+
+}
+
+.container2{
+    width: 100%;
+    padding: 20px;
+    margin: 200px auto;
+    display: flex;
+    flex-direction: row;
+    justify-content: left;
+
+    /*products display*/
+
+}
+
+.container3{
+    width: 100%;
+    padding: -100px;
+    margin: 0px auto;
+    display: flex;
+    flex-direction: row;
+    justify-content: left;
+}
+.img5{
+    margin: 0px 200px;
+    transition: 1s;
+    
+}
+.img5:hover{
+    transform: scale(1.3);
+    z-index: 2;
+}
+.img6{
+    margin: 0px 180px;
+    transition: 1s;
+    
+}
+.img6:hover{
+    transform: scale(1.3);
+    z-index: 2;
+}
+.img7{
+    margin: 100px 200px;
+    transition: 1s;
+    
+}
+.img7:hover{
+    transform: scale(1.3);
+    z-index: 2;
+}
+.img8{
+    margin: 100px 180px;
+    transition: 1s;
+    
+}
+.img8:hover{
+    transform: scale(1.3);
+    z-index: 2;
+}
+#button1{
+  position: absolute;
+  top: 50cm;
+  left: 7cm;
+  background-color: rgb(87, 47, 1);
+  padding: .5em;
+  -moz-border-radius: 5px;
+  -webkit-border-radius: 5px;
+  border-radius: 6px;
+  color: orange;
+  font-family: 'Oswald';
+  font-size: 20px;
+  text-decoration: none;
+  border: none;
+}
+#button1:hover {
+    background-color: orange;
+    color: white;
+}
+#button2{
+  position: absolute;
+  top: 50cm;
+  left: 16cm;
+  background-color: rgb(87, 47, 1);
+  padding: .5em;
+  -moz-border-radius: 5px;
+  -webkit-border-radius: 5px;
+  border-radius: 6px;
+  color: orange;
+  font-family: 'Oswald';
+  font-size: 20px;
+  text-decoration: none;
+  border: none;
+}
+#button2:hover {
+    background-color: orange;
+    color: white;
+}
+#button3{
+  position: absolute;
+  top: 50cm;
+  left: 24.5cm;
+  background-color: rgb(87, 47, 1);
+  padding: .5em;
+  -moz-border-radius: 5px;
+  -webkit-border-radius: 5px;
+  border-radius: 6px;
+  color: orange;
+  font-family: 'Oswald';
+  font-size: 20px;
+  text-decoration: none;
+  border: none;
+}
+#button3:hover {
+    background-color: orange;
+    color: white;
+}
+#button4{
+  position: absolute;
+  top: 50cm;
+  left: 34cm;
+  background-color: rgb(87, 47, 1);
+  padding: .5em;
+  -moz-border-radius: 5px;
+  -webkit-border-radius: 5px;
+  border-radius: 6px;
+  color: orange;
+  font-family: 'Oswald';
+  font-size: 20px;
+  text-decoration: none;
+  border: none;
+}
+#button4:hover {
+    background-color: orange;
+    color: white;
+}
+#button5{
+  position: absolute;
+  top: 50cm;
+  left: 43cm;
+  background-color: rgb(87, 47, 1);
+  padding: .5em;
+  -moz-border-radius: 5px;
+  -webkit-border-radius: 5px;
+  border-radius: 6px;
+  color: orange;
+  font-family: 'Oswald';
+  font-size: 20px;
+  text-decoration: none;
+  border: none;
+}
+#button5:hover {
+    background-color: orange;
+    color: white;
+}
+#button6{
+  position: absolute;
+  top: 78cm;
+  left: 5.5cm;
+  background-color: rgb(87, 47, 1);
+  padding: .5em;
+  -moz-border-radius: 5px;
+  -webkit-border-radius: 5px;
+  border-radius: 6px;
+  color: orange;
+  font-family: 'Oswald';
+  font-size: 20px;
+  text-decoration: none;
+  border: none;
+}
+#button6:hover {
+    background-color: orange;
+    color: white;
+}
+#button7{
+  position: absolute;
+  top: 78cm;
+  left: 15cm;
+  background-color: rgb(87, 47, 1);
+  padding: .5em;
+  -moz-border-radius: 5px;
+  -webkit-border-radius: 5px;
+  border-radius: 6px;
+  color: orange;
+  font-family: 'Oswald';
+  font-size: 20px;
+  text-decoration: none;
+  border: none;
+}
+#button7:hover {
+    background-color: orange;
+    color: white;
+}
+#button8{
+  position: absolute;
+  top: 78cm;
+  left: 24cm;
+  background-color: rgb(87, 47, 1);
+  padding: .5em;
+  -moz-border-radius: 5px;
+  -webkit-border-radius: 5px;
+  border-radius: 6px;
+  color: orange;
+  font-family: 'Oswald';
+  font-size: 20px;
+  text-decoration: none;
+  border: none;
+}
+#button8:hover {
+    background-color: orange;
+    color: white;
+}
+#button9{
+  position: absolute;
+  top: 78cm;
+  left: 34cm;
+  background-color: rgb(87, 47, 1);
+  padding: .5em;
+  -moz-border-radius: 5px;
+  -webkit-border-radius: 5px;
+  border-radius: 6px;
+  color: orange;
+  font-family: 'Oswald';
+  font-size: 20px;
+  text-decoration: none;
+  border: none;
+}
+#button9:hover {
+    background-color: orange;
+    color: white;
+}
+#button10{
+  position: absolute;
+  top: 78cm;
+  left: 43cm;
+  background-color: rgb(87, 47, 1);
+  padding: .5em;
+  -moz-border-radius: 5px;
+  -webkit-border-radius: 5px;
+  border-radius: 6px;
+  color: orange;
+  font-family: 'Oswald';
+  font-size: 20px;
+  text-decoration: none;
+  border: none;
+}
+#button10:hover {
+    background-color: orange;
+    color: white;
+}
+#button11{
+  position: absolute;
+  top: 104cm;
+  left: 4.5cm;
+  background-color: rgb(87, 47, 1);
+  padding: .5em;
+  -moz-border-radius: 5px;
+  -webkit-border-radius: 5px;
+  border-radius: 6px;
+  color: orange;
+  font-family: 'Oswald';
+  font-size: 20px;
+  text-decoration: none;
+  border: none;
+}
+#button11:hover {
+    background-color: orange;
+    color: white;
+}
+#button12{
+  position: absolute;
+  top: 104cm;
+  left: 13.5cm;
+  background-color: rgb(87, 47, 1);
+  padding: .5em;
+  -moz-border-radius: 5px;
+  -webkit-border-radius: 5px;
+  border-radius: 6px;
+  color: orange;
+  font-family: 'Oswald';
+  font-size: 20px;
+  text-decoration: none;
+  border: none;
+}
+#button12:hover {
+    background-color: orange;
+    color: white;
+}
+#button13{
+  position: absolute;
+  top: 104cm;
+  left: 24.5cm;
+  background-color: rgb(87, 47, 1);
+  padding: .5em;
+  -moz-border-radius: 5px;
+  -webkit-border-radius: 5px;
+  border-radius: 6px;
+  color: orange;
+  font-family: 'Oswald';
+  font-size: 20px;
+  text-decoration: none;
+  border: none;
+}
+#button13:hover {
+    background-color: orange;
+    color: white;
+}
+#button14{
+  position: absolute;
+  top: 104cm;
+  left: 34cm;
+  background-color: rgb(87, 47, 1);
+  padding: .5em;
+  -moz-border-radius: 5px;
+  -webkit-border-radius: 5px;
+  border-radius: 6px;
+  color: orange;
+  font-family: 'Oswald';
+  font-size: 20px;
+  text-decoration: none;
+  border: none;
+}
+#button14:hover {
+    background-color: orange;
+    color: white;
+}
+#button15{
+  position: absolute;
+  top: 104cm;
+  left: 43cm;
+  background-color: rgb(87, 47, 1);
+  padding: .5em;
+  -moz-border-radius: 5px;
+  -webkit-border-radius: 5px;
+  border-radius: 6px;
+  color: orange;
+  font-family: 'Oswald';
+  font-size: 20px;
+  text-decoration: none;
+  border: none;
+}
+#button15:hover {
+    background-color: orange;
+    color: white;
+}
+#button16{
+  position: absolute;
+  top: 131cm;
+  left: 5cm;
+  background-color: rgb(87, 47, 1);
+  padding: .5em;
+  -moz-border-radius: 5px;
+  -webkit-border-radius: 5px;
+  border-radius: 6px;
+  color: orange;
+  font-family: 'Oswald';
+  font-size: 20px;
+  text-decoration: none;
+  border: none;
+}
+#button16:hover {
+    background-color: orange;
+    color: white;
+}
+#button17{
+  position: absolute;
+  top: 131cm;
+  left: 13cm;
+  background-color: rgb(87, 47, 1);
+  padding: .5em;
+  -moz-border-radius: 5px;
+  -webkit-border-radius: 5px;
+  border-radius: 6px;
+  color: orange;
+  font-family: 'Oswald';
+  font-size: 20px;
+  text-decoration: none;
+  border: none;
+}
+#button17:hover {
+    background-color: orange;
+    color: white;
+}
+#button18{
+  position: absolute;
+  top: 131cm;
+  left: 24.5cm;
+  background-color: rgb(87, 47, 1);
+  padding: .5em;
+  -moz-border-radius: 5px;
+  -webkit-border-radius: 5px;
+  border-radius: 6px;
+  color: orange;
+  font-family: 'Oswald';
+  font-size: 20px;
+  text-decoration: none;
+  border: none;
+}
+#button18:hover {
+    background-color: orange;
+    color: white;
+}
+#button19{
+  position: absolute;
+  top: 131cm;
+  left: 34cm;
+  background-color: rgb(87, 47, 1);
+  padding: .5em;
+  -moz-border-radius: 5px;
+  -webkit-border-radius: 5px;
+  border-radius: 6px;
+  color: orange;
+  font-family: 'Oswald';
+  font-size: 20px;
+  text-decoration: none;
+  border: none;
+}
+#button19:hover {
+    background-color: orange;
+    color: white;
+}
+#button20{
+  position: absolute;
+  top: 131cm;
+  left: 42cm;
+  background-color: rgb(87, 47, 1);
+  padding: .5em;
+  -moz-border-radius: 5px;
+  -webkit-border-radius: 5px;
+  border-radius: 6px;
+  color: orange;
+  font-family: 'Oswald';
+  font-size: 20px;
+  text-decoration: none;
+  border: none;
+}
+#button20:hover {
+    background-color: orange;
+    color: white;
+}
+#button21{
+  position: absolute;
+  top: 158cm;
+  left: 4.5cm;
+  background-color: rgb(87, 47, 1);
+  padding: .5em;
+  -moz-border-radius: 5px;
+  -webkit-border-radius: 5px;
+  border-radius: 6px;
+  color: orange;
+  font-family: 'Oswald';
+  font-size: 20px;
+  text-decoration: none;
+  border: none;
+}
+#button21:hover {
+    background-color: orange;
+    color: white;
+}
+#button22{
+  position: absolute;
+  top: 158cm;
+  left: 16.5cm;
+  background-color: rgb(87, 47, 1);
+  padding: .5em;
+  -moz-border-radius: 5px;
+  -webkit-border-radius: 5px;
+  border-radius: 6px;
+  color: orange;
+  font-family: 'Oswald';
+  font-size: 20px;
+  text-decoration: none;
+  border: none;
+}
+#button22:hover {
+    background-color: orange;
+    color: white;
+}
+#button23{
+  position: absolute;
+  top: 158cm;
+  left: 24.5cm;
+  background-color: rgb(87, 47, 1);
+  padding: .5em;
+  -moz-border-radius: 5px;
+  -webkit-border-radius: 5px;
+  border-radius: 6px;
+  color: orange;
+  font-family: 'Oswald';
+  font-size: 20px;
+  text-decoration: none;
+  border: none;
+}
+#button23:hover {
+    background-color: orange;
+    color: white;
+}
+#button24{
+  position: absolute;
+  top: 158cm;
+  left: 34cm;
+  background-color: rgb(87, 47, 1);
+  padding: .5em;
+  -moz-border-radius: 5px;
+  -webkit-border-radius: 5px;
+  border-radius: 6px;
+  color: orange;
+  font-family: 'Oswald';
+  font-size: 20px;
+  text-decoration: none;
+  border: none;
+}
+#button24:hover {
+    background-color: orange;
+    color: white;
+}
+#button25{
+  position: absolute;
+  top: 158cm;
+  left: 43cm;
+  background-color: rgb(87, 47, 1);
+  padding: .5em;
+  -moz-border-radius: 5px;
+  -webkit-border-radius: 5px;
+  border-radius: 6px;
+  color: orange;
+  font-family: 'Oswald';
+  font-size: 20px;
+  text-decoration: none;
+  border: none;
+}
+#button25:hover {
+    background-color: orange;
+    color: white;
+}
+
+
+  /*for the hardeware*/
+  .header2 {
+    text-align: center;
+    margin: auto;
+    width: 600px;
+    padding: 50px;
+    font-size: 1cm;
+    color: orange;
+}
+  .container4{
+    width: 100%;
+    padding: 20px;
+    margin: 100px auto;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+  }
+
+  .box3{
+    width: 250px;
+    height: 300px;
+    margin: 1px 50px;
+    transition: 1s;
+
+  }
+  .box3:hover{
+    transform: scale(1.3);
+    z-index: 2;
+    
+  }
+  .HWtext{
+    color: orange;
+    font-size: 1cm;
+    position: relative;
+    left: 9%;
+    top: -30px
+  }
+  .HWtext2{
+    color: orange;
+    font-size: 1cm;
+    position: relative;
+    left: 27%;
+    top: -70px
+  }
+  .HWtext3{
+    text-align: center;
+    color: orange;
+    font-size: 1cm;
+    position: relative;
+    left: 1%;
+    top: -115px
+  }
+  .HWtext4{
+    text-align: center;
+    color: orange;
+    font-size: 1cm;
+    position: relative;
+    left: 20%;
+    top: -155px
+  }
+  .HWtext5{
+    color: orange;
+    font-size: 1cm;
+    position: relative;
+    left: 82%;
+    top: -194px
+  }
+  .header3{
+    text-align: center;
+    position: relative;
+    top: -150px;
+    margin: auto;
+    width: 600px;
+    padding: 50px;
+    font-size: 0.75cm;
+    color: orange;
+  }
+  .container5{
+    position: relative;
+    top: -190px;
+    width: 100%;
+    padding: 20px;
+    margin: 100px auto;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+  }
+  .box4{
+    width: 250px;
+    height: 300px;
+    margin: 1px 50px;
+    transition: 1s;
+    position: relative;
+    top: 80px;
+
+  }
+  .box4:hover{
+    transform: scale(1.3);
+    z-index: 2;
+    
+  }
+  .header4{
+    text-align: center;
+    position: relative;
+    top: -10px;
+    margin: auto;
+    width: 600px;
+    padding: 50px;
+    font-size: 0.75cm;
+    color: orange;
+  }
+  .HWtext6{
+    color: orange;
+    font-size: 1cm;
+    position: relative;
+    left: 5%;
+    top: -25px
+  }
+  .HWtext7{
+    margin: auto;
+    color: orange;
+    font-size: 1cm;
+    position: relative;
+    left: 82%;
+    top: -194px
+  }
+  .HWtext8{
+    margin: auto;
+    color: orange;
+    font-size: 1cm;
+    position: relative;
+    left: 80%;
+    top: -194px
+  }
+  .HWtext9{
+    color: orange;
+    font-size: 1cm;
+    position: relative;
+    left: 24%;
+    top: -70px
+  }
